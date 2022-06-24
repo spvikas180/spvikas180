@@ -1,0 +1,13 @@
+[30-Oct-2021 11:08:01 Asia/Kolkata] PHP Warning:  file_get_contents(../../../sitemap.xml): failed to open stream: No such file or directory in /home3/writemereview/public_html/admin/control/functions.php on line 406
+[01-Nov-2021 15:16:51 Asia/Kolkata] PHP Warning:  imagecreatefrompng(): '../../../upload/business-logo/ijstartcanon.png' is not a valid PNG file in /home2/sovgd/public_html/admin/control/functions.php on line 347
+[01-Nov-2021 15:16:51 Asia/Kolkata] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, bool given in /home2/sovgd/public_html/admin/control/functions.php on line 355
+[01-Nov-2021 15:42:12 Asia/Kolkata] PHP Warning:  file_get_contents(../../../sitemap.xml): failed to open stream: No such file or directory in /home2/sovgd/public_html/admin/control/functions.php on line 406
+[01-Nov-2021 15:45:45 Asia/Kolkata] PHP Warning:  file_get_contents(../../../sitemap.xml): failed to open stream: No such file or directory in /home2/sovgd/public_html/admin/control/functions.php on line 406
+[01-Nov-2021 15:47:44 Asia/Kolkata] PHP Warning:  file_get_contents(../../../sitemap.xml): failed to open stream: No such file or directory in /home2/sovgd/public_html/admin/control/functions.php on line 406
+[01-Nov-2021 15:51:17 Asia/Kolkata] PHP Warning:  file_get_contents(../../../sitemap.xml): failed to open stream: No such file or directory in /home2/sovgd/public_html/admin/control/functions.php on line 406
+[01-Nov-2021 15:52:30 Asia/Kolkata] PHP Warning:  file_get_contents(../../../sitemap.xml): failed to open stream: No such file or directory in /home2/sovgd/public_html/admin/control/functions.php on line 406
+[01-Nov-2021 15:53:50 Asia/Kolkata] PHP Warning:  file_get_contents(../../../sitemap.xml): failed to open stream: No such file or directory in /home2/sovgd/public_html/admin/control/functions.php on line 406
+[01-Nov-2021 15:56:26 Asia/Kolkata] PHP Warning:  file_get_contents(../../../sitemap.xml): failed to open stream: No such file or directory in /home2/sovgd/public_html/admin/control/functions.php on line 406
+[01-Nov-2021 15:59:45 Asia/Kolkata] PHP Warning:  file_get_contents(../../../sitemap.xml): failed to open stream: No such file or directory in /home2/sovgd/public_html/admin/control/functions.php on line 406
+[01-Nov-2021 16:01:44 Asia/Kolkata] PHP Warning:  file_get_contents(../../../sitemap.xml): failed to open stream: No such file or directory in /home2/sovgd/public_html/admin/control/functions.php on line 406
+[01-Nov-2021 16:02:48 Asia/Kolkata] PHP Warning:  file_get_contents(../../../sitemap.xml): failed to open stream: No such file or directory in /home2/sovgd/public_html/admin/control/functions.php on line 406

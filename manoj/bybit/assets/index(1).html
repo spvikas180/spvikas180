@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://bybit.ada.support/embed/modern/button/5b11cb9/index.html -->
+<html class="js-focus-visible" data-js-focus-visible=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Ada Button</title><style>.button {
+      padding: 0;
+      margin: 0;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+      border: 1px solid rgba(0, 0, 0, .05);
+      /* transition: 120ms ease; */
+      transition: 200ms opacity ease;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      overflow: hidden;
+    }
+
+    .js-focus-visible :focus:not(.focus-visible) {
+      outline: none;
+    }
+
+    .button--appear {
+      opacity: 1
+    }
+
+    .button--hide-icon > :first-child {
+      animation-duration: 2s;
+      animation-name: dialogue-fade;
+    }
+
+    .button__icon {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      padding: 17%;
+      position: absolute;
+      box-sizing: border-box;
+      pointer-events: none;
+    }
+
+    .button__emoji {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10010;
+      width: 100%;
+      height: 100%;
+      animation-duration: 2s;
+      animation-name: emoji-bounce;
+      animation-fill-mode: forwards;
+    }
+
+    .notification {
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-style: solid;
+      border-color: #ff3b30;
+      background-color: #fff;
+      box-sizing: border-box;
+      animation-duration: .5s;
+      animation-name: notification-fade-in;
+    }
+
+    .button-v2 {
+      padding: 0;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 1px solid rgba(0, 0, 0, .05);
+      transition: 200ms opacity ease;
+      position: absolute;
+      right: 24px;
+      bottom: 24px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 12px 48px 4px rgba(0, 0, 0, 0.12);
+    }
+
+    .button--text {
+      border-radius: 42px;
+      min-width: 95px;
+      padding: 0 13px;
+      justify-content: flex-start;
+    }
+
+    .button-v2 .button__icon {
+      position: relative;
+    }
+
+    .button--text .button__icon {
+      height: 22px;
+      width: 22px;
+      padding: 0;
+      top: -1px;
+    }
+
+    .button__text {
+      font-size: 16px;
+      padding-left: 8px;
+      color: inherit;
+      font-weight: 700;
+      line-height: 1.3;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .button--text .notification {
+      top: 36px;
+      left: 18px;
+    }
+
+    @keyframes emoji-bounce {
+      0% {
+        transform: translateY(60px);
+      }
+
+      10% {
+        transform: translateY(0);
+      }
+
+      17% {
+        transform: rotateZ(-12deg);
+        animation-timing-function: ease-in-out;
+      }
+
+      23% {
+        transform: rotateZ(18deg);
+        animation-timing-function: ease-in-out;
+      }
+
+      30% {
+        transform: rotateZ(0deg);
+        animation-timing-function: ease-in-out;
+      }
+
+      80% {
+        transform: translateY(0);
+      }
+
+      90% {
+        transform: translateY(3px);
+      }
+
+      100% {
+        transform: translateY(-60px);
+      }
+    }
+
+    @keyframes dialogue-fade {
+      0% {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+      }
+
+      10% {
+        opacity: 0;
+        transform: scale3d(0, 0, 0);
+      }
+
+      90% {
+        opacity: 0;
+        transform: scale3d(0, 0, 0);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+      }
+    }
+
+    @keyframes notification-fade-in {
+      0% {
+        opacity: 0;
+        transform: scale3d(0, 0, 0);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+      }
+    }</style><script defer="defer" src="./sentry.ebd5e39799864768e692.js.download" integrity="sha256-LCA5FZNPt2WF8xe+vm1h+AtTc82MU7GKodxTRIhVJuM= sha384-IoyzqyWVK4MuH02SbMtB5RdhmMi8NkWn8D+6tptfrnuzYYOWHW+B1A64ZfaupO1c" crossorigin="anonymous"></script><script defer="defer" src="./preact.bc7a377cc5c841d8adfc.js.download" integrity="sha256-t/YD9FyW0hI1G9En2ZtIxK9p5nB56jvZnHEdcjtu9PA= sha384-sHq6oHi8JsyupFSTcSg2mm//b3CzdZI7Zm7cln7hLFD/7grOQFSWL5O4Q3vIKZYN" crossorigin="anonymous"></script><script defer="defer" src="./index.js(1).download" integrity="sha256-+APPdR3Y0qNnGU1guWQvV9UJgXvDy9rsLFbNo4uSa0w= sha384-QPUDTULxqPZgDtfNoCu6DS7Ud0ILZjtvl0wDRro6fyGFoVDW1jKkb6UHzqNnDE0e" crossorigin="anonymous"></script></head><body style="margin: 0;"><button type="button" id="ada-chat-button" class="
+          
+          
+          button-v2
+          button--appear" aria-label="Chat with bot" title="Chat with bot" style="background-color: rgb(247, 166, 0); height: 44px; width: 44px; color: rgb(0, 0, 0);"><img class="button__icon" alt="" src="./3c36472d-9af2-4ea1-8e3d-622ef9f1b0d1.svg"></button><div class="notification" role="alert" style="height: 17px; width: 17px; border-width: 5.984px; display: none; right: 24px; bottom: 55.25px; top: auto !important; left: auto !important;"></div></body></html>

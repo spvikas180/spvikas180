@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://otc.ftx.com/sso/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>SSO</title>
+<script>
+      const allowedOrigins = [
+        'https://ftexchange.com',
+        'https://otc.ftexchange.com',
+        'https://ftex.com',
+        'https://otc.ftex.com',
+        'https://ftx.io',
+        'https://otc.ftx.io',
+        'https://ftx.com',
+        'https://otc.ftx.com',
+        'https://ftx.us',
+        'https://otc.ftx.us',
+      ];
+
+      function isAllowedOrigin(origin) {
+        return allowedOrigins.indexOf(origin) !== -1;
+      }
+
+      function isInIframe() {
+        try {
+          return window.self !== window.top;
+        } catch (e) {
+          return true;
+        }
+      }
+
+      function handleToken(token) {
+        localStorage.removeItem('subaccount');
+        if (!token) {
+          localStorage.removeItem('authToken');
+          return;
+        }
+        localStorage.setItem('authToken', token);
+      }
+
+      window.addEventListener('message', e => {
+        if (isAllowedOrigin(e.origin)) {
+          if (e.data.type === 'ftxToken') {
+            handleToken(e.data.token);
+
+            if (document.hasStorageAccess !== undefined && isInIframe()) {
+              document.hasStorageAccess().then(hasStorageAccess => {
+                if (!hasStorageAccess) {
+                  let params = new URLSearchParams([
+                    ['token', e.data.token || ''],
+                    ['redirect', e.data.redirect || e.origin],
+                  ]);
+                  let url = new URL(window.location.href);
+                  url.hash = params.toString();
+                  window.top.location.replace(url);
+                }
+              });
+            }
+          }
+        }
+      });
+
+      if (document.referrer && isAllowedOrigin(new URL(document.referrer).origin)) {
+        let params = new URL(document.location.href.replace('#', '?')).searchParams;
+        if (params.get('token') !== null) {
+          handleToken(params.get('token'));
+        }
+        if (params.get('redirect') !== null) {
+          if (params.get('redirect') === '') {
+            location.replace(document.referrer);
+          } else if (isAllowedOrigin(new URL(params.get('redirect')).origin)) {
+            location.replace(params.get('redirect'));
+          }
+        }
+      }
+    </script>
+</head>
+<body><script defer="" src="./v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon="{&quot;rayId&quot;:&quot;6e6f218d9b1b08a5&quot;,&quot;token&quot;:&quot;7a17a4f473fb4f15a21c9ed7ec04e38d&quot;,&quot;version&quot;:&quot;2021.12.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+<script defer="" src="./v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon="{&quot;rayId&quot;:&quot;6e6f218caf3e846b&quot;,&quot;token&quot;:&quot;7a17a4f473fb4f15a21c9ed7ec04e38d&quot;,&quot;version&quot;:&quot;2021.12.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+
+</body></html>

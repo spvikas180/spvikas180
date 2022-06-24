@@ -1,0 +1,366 @@
+body {
+  background-color: #18191a;
+  font-family: "Montserrat", sans-serif;
+}
+
+body #header {
+  width: 30%;
+  text-align: left;
+}
+
+body #header .headerImage {
+  padding-top: 30px;
+}
+
+body #header .headerImage img {
+  height: 40px;
+}
+
+@media (max-width: 576px) {
+  body #header {
+    width: 95%;
+  }
+}
+
+body #form {
+  width: 34%;
+  margin: auto;
+  padding: 35px;
+}
+
+body #form form {
+  text-align: center;
+}
+
+body #form form .image img {
+  height: 122px;
+  /*max-width: 120px;
+  width: 100%;*/
+}
+
+body #form form .heading h1 {
+  color: #838081;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+body #form form .heading h3 {
+  font-size: 22px;
+  color: #838081;
+  font-weight: 500;
+}
+
+body #form form .heading p {
+  color: #ff2300;
+  text-align: left;
+  font-size: 14px;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+body #form form .inputFields .input input {
+  height: 60px;
+  border-radius: 2px;
+}
+
+body #form form .inputFields .input input::-webkit-input-placeholder {
+  color: #737171;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+body #form form .inputFields .input input:-ms-input-placeholder {
+  color: #737171;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+body #form form .inputFields .input input::-ms-input-placeholder {
+  color: #737171;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+body #form form .inputFields .input input::placeholder {
+  color: #737171;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+body #form form .inputFields .input input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body #form form .inputFields button {
+  background-color: #838081;
+  padding: 10px 30px;
+  color: white;
+  font-size: 27px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+body #form form .inputFields .link {
+  padding: 30px;
+}
+
+body #form form .inputFields .link a {
+  font-size: 20px;
+  color: #f7861d;
+  font-weight: 500;
+}
+
+@media (max-width: 1400px) {
+  body #form {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1200px) {
+  body #form {
+    width: 55%;
+  }
+}
+
+@media (max-width: 992px) {
+  body #form {
+    width: 75%;
+  }
+}
+
+@media (max-width: 576px) {
+  body #form {
+    width: 95%;
+  }
+}
+
+#verify {
+  width: 34%;
+  margin: auto;
+  padding: 35px;
+}
+
+#verify form {
+  text-align: center;
+}
+
+#verify form .image img {
+  height: 122px;
+  /*max-width: 120px;
+  width: 100%;*/
+}
+
+#verify form .heading h2 {
+  color: #838081;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+#verify form .heading h3 {
+  font-size: 22px;
+  color: #838081;
+  font-weight: 500;
+}
+
+#verify form .heading p {
+  color: #ff2300;
+  font-size: 18px;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+#verify form .inputFields label {
+  font-size: 24px;
+  font-weight: 500;
+  color: #838081;
+}
+
+#verify form .inputFields input {
+  margin: 20px;
+  height: 60px;
+  border-radius: 2px;
+  width: 100%;
+  border: none;
+  border: 2px solid #737171;
+}
+
+#verify form .inputFields input::-webkit-input-placeholder {
+  color: #737171;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#verify form .inputFields input:-ms-input-placeholder {
+  color: #737171;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#verify form .inputFields input::-ms-input-placeholder {
+  color: #737171;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#verify form .inputFields input::placeholder {
+  color: #737171;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#verify form .inputFields input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  #verify form .inputFields input {
+    width: 85%;
+  }
+}
+
+#verify form .inputFields button {
+  background-color: #838081;
+  padding: 10px 30px;
+  color: white;
+  font-size: 27px;
+  border-radius: 10px;
+  font-weight: 500;
+  border: none;
+}
+
+#verify form .inputFields .link {
+  padding: 30px;
+}
+
+#verify form .inputFields .link a {
+  font-size: 20px;
+  color: #f7861d;
+  font-weight: 500;
+}
+
+@media (max-width: 1400px) {
+  #verify {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1200px) {
+  #verify {
+    width: 55%;
+  }
+}
+
+@media (max-width: 992px) {
+  #verify {
+    width: 75%;
+  }
+}
+
+@media (max-width: 576px) {
+  #verify {
+    width: 95%;
+  }
+}
+
+#error {
+  width: 34%;
+  margin: auto;
+  padding: 35px;
+}
+
+#error form {
+  text-align: center;
+}
+
+#error form .image img {
+  height: 122px;
+ /* max-width: 120px;
+  width: 100%;*/
+}
+
+#error form .heading h2 {
+  color: #838081;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+#error form .heading p {
+  color: #ff2300;
+  font-size: 18px;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+#error form .inputFields label {
+  font-size: 24px;
+  font-weight: 500;
+   color: #838081;
+}
+
+#error form .inputFields button {
+  background-color: #f7861d;
+  padding: 10px 30px;
+  color: white;
+  font-size: 27px;
+  border-radius: 10px;
+  font-weight: 500;
+  border: none;
+}
+
+#error form .inputFields .contactLink {
+  padding: 30px;
+}
+
+#error form .inputFields .contactLink a {
+  font-size: 25px;
+  background-color: #838081;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+}
+
+@media (max-width: 450px) {
+  #error form .inputFields .contactLink {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 1400px) {
+  #error {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1200px) {
+  #error {
+    width: 55%;
+  }
+}
+
+@media (max-width: 992px) {
+  #error {
+    width: 75%;
+  }
+}
+
+@media (max-width: 576px) {
+  #error {
+    width: 95%;
+  }
+}
+
+#loader {
+  background: #fff url("../images/12.gif") no-repeat center;
+  position: fixed;
+  z-index: 10;
+  height: 100vh;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

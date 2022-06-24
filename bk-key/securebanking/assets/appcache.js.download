@@ -1,0 +1,16 @@
+window.addEventListener('load', function(e) {
+    if (window.applicationCache) {
+        function checkCache() {
+            if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+                // Browser downloaded a new app cache.
+                // Swap it in and reload the page to get the new hotness.
+                window.applicationCache.swapCache();
+                window.location.reload();
+            } else {
+                // Manifest didn't changed. Nothing new to server.A
+            }
+        }
+        window.applicationCache.addEventListener('updateready', function(e) { checkCache(); }, false);
+        checkCache();
+    }
+}, false);

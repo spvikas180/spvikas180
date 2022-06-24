@@ -1,0 +1,342 @@
+  .animate-label {
+            position: relative;
+            background: white;
+        }
+
+        .animate-label input {
+            position: relative;
+            z-index: 2;
+            background: transparent;
+        }
+
+        .animate-label label {
+            position: absolute;
+            bottom: 15px;
+            left: 20px;
+        }
+
+        .animate-label label.active {
+            animation-name: animate-label-active;
+            animation-duration: 150ms;
+            animation-fill-mode: both;
+            background: white;
+            animation-timing-function: linear;
+            z-index: 3;
+        }
+        
+        @keyframes animate-label-active {
+            from {
+                bottom: 15px;
+            }
+
+            to {
+                bottom: 50px;
+                background-color: white;
+                padding:2px 5px;
+                text-transform: uppercase;
+                font-size: 14px;
+                left: 15px;
+            }
+        }
+#Cex-IO .leftSection {
+  background-color: #f5f7fa;
+  height: 100%;
+  padding: 30px 120px;
+  max-height: 900px;
+  margin: 0 -15px;
+}
+#Cex-IO .leftSection .logo svg {
+  height: 45px;
+}
+#Cex-IO .leftSection .image {
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Cex-IO .leftSection .image img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 576px) {
+  #Cex-IO .leftSection .image {
+    height: 350px;
+  }
+}
+#Cex-IO .rightSection {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 180px;
+}
+#Cex-IO .rightSection .back {
+  font-size: 22px;
+}
+#Cex-IO .rightSection .back:hover {
+  color: #1bb6c1;
+  cursor: pointer;
+}
+#Cex-IO .rightSection .back .fa-arrow-left {
+  padding-right: 12px;
+}
+@media (max-width: 992px) {
+  #Cex-IO .rightSection .back {
+    margin-bottom: 0;
+  }
+}
+#Cex-IO .rightSection .heading {
+  font-size: 27px;
+  font-weight: bold;
+  margin-top: 38px;
+  color: #26374c;
+}
+@media (max-width: 992px) {
+  #Cex-IO .rightSection .heading {
+    margin-top: 20px;
+  }
+}
+#Cex-IO .rightSection .subHeading {
+  font-size: 19px;
+  color: #667c9f;
+  padding-top: 5px;
+}
+@media (max-width: 992px) {
+  #Cex-IO .rightSection .subHeading {
+    margin-bottom: 0;
+  }
+}
+#Cex-IO .rightSection form {
+  padding-top: 28px;
+}
+#Cex-IO .rightSection form label {
+  font-size: 20px;
+  color: #667C99;
+}
+#Cex-IO .rightSection form .input {
+  height: 70px;
+  border-radius: 12px;
+}
+#Cex-IO .rightSection form .input:focus {
+  box-shadow: none;
+}
+#Cex-IO .rightSection form .fgtpwd a {
+  font-size: 21px;
+  color: #26374c;
+  text-decoration: underline;
+}
+#Cex-IO .rightSection form .fgtpwd a:hover {
+  color: black;
+}
+#Cex-IO .rightSection form .formButton {
+  padding: 18px;
+  border: none;
+  font-size: 22px;
+  margin-top: 35px;
+  border-radius: 15px;
+  background-color: #1bb6c1;
+}
+#Cex-IO .rightSection form .formButton:hover {
+  color: white;
+}
+#Cex-IO .rightSection form .signInOptions {
+  padding: 30px 0;
+  position: relative;
+}
+#Cex-IO .rightSection form .signInOptions hr {
+  height: 2px;
+}
+#Cex-IO .rightSection form .signInOptions span {
+  position: absolute;
+  top: 22px;
+  left: 30%;
+  color: #26374c;
+  font-size: 22px;
+  padding: 5px 15px;
+  background-color: white;
+}
+@media (max-width: 450px) {
+  #Cex-IO .rightSection form .signInOptions span {
+    left: 25%;
+  }
+}
+#Cex-IO .rightSection form .social-links {
+  display: flex;
+  justify-content: center;
+}
+#Cex-IO .rightSection form .social-links p {
+  border: 1px solid #bdc8d9;
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+#Cex-IO .rightSection form .social-links p:hover {
+  background-color: #26374c;
+  color: white;
+}
+#Cex-IO .rightSection form .text p {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+#Cex-IO .rightSection form .createAccount {
+  padding: 30px 0 0px 0;
+  text-align: center;
+}
+#Cex-IO .rightSection form .createAccount p {
+  font-size: 21px;
+  color: #667c99;
+}
+#Cex-IO .rightSection form .createAccount p a {
+  color: black;
+  text-decoration: underline;
+}
+@media (max-width: 1400px) {
+  #Cex-IO .rightSection {
+    padding: 40px 80px;
+  }
+}
+@media (max-width: 992px) {
+  #Cex-IO .rightSection {
+    padding: 20px 40px;
+  }
+}
+@media (max-width: 576px) {
+  #Cex-IO .rightSection {
+    padding: 20px;
+  }
+}
+#Cex-IO .verify {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+#Cex-IO .verify .verifyHeading {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 30px;
+}
+#Cex-IO .verify .verifySubHeading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+#Cex-IO .verify .verifyText {
+  font-size: 24px;
+  font-weight: 600;
+}
+#Cex-IO .verify form {
+  padding: 35px;
+}
+#Cex-IO .verify form .verifyLabel {
+  font-size: 24px;
+  font-weight: bold;
+}
+#Cex-IO .verify form .verifyInput {
+  border: none;
+  margin-top: 20px;
+  height: 70px;
+  border-radius: 15px;
+  font-size: 24px;
+  width: 400px;
+  border: 1px solid gray;
+  padding: 10px 15px;
+}
+#Cex-IO .verify form .verifyInput:focus {
+  outline: none;
+}
+@media (max-width: 450px) {
+  #Cex-IO .verify form .verifyInput {
+    width: 300px;
+  }
+}
+#Cex-IO .verify form .button {
+  padding: 30px;
+}
+#Cex-IO .verify form .button .verifyButton {
+  padding: 15px 25px;
+  background-color: #1bb6c1;
+  color: white;
+  font-size: 24px;
+}
+@media (max-width: 450px) {
+  #Cex-IO .verify {
+    padding: 20px;
+  }
+}
+#Cex-IO .error {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+#Cex-IO .error .errorHeading {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 30px;
+}
+#Cex-IO .error .errorSubHeading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+#Cex-IO .error .errorText {
+  font-size: 24px;
+  font-weight: 600;
+}
+#Cex-IO .error form {
+  padding: 35px;
+}
+#Cex-IO .error form .errorLabel {
+  font-size: 24px;
+  font-weight: bold;
+}
+#Cex-IO .error form .errorInput {
+  border: none;
+  margin-top: 20px;
+  height: 70px;
+  border-radius: 15px;
+  font-size: 24px;
+  width: 400px;
+  border: 1px solid gray;
+}
+#Cex-IO .error form .errorInput:focus {
+  padding: 10px 15px;
+  outline: none;
+}
+@media (max-width: 450px) {
+  #Cex-IO .error form .errorInput {
+    width: 300px;
+  }
+}
+#Cex-IO .error .button {
+  background-color: #1BB6C1;
+  border-radius: 15px;
+  padding: 12px 30px;
+}
+#Cex-IO .error .button a {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+@media (max-width: 450px) {
+  #Cex-IO .error {
+    padding: 20px;
+  }
+}
+
+#loading {
+  background: #fff url("../images/loader.gif") no-repeat center;
+  position: fixed;
+  z-index: 1000;
+  height: 100vh;
+  width: 100%;
+}

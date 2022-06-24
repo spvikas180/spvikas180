@@ -1,0 +1,8 @@
+.selectall {
+    opacity: 0;
+    position: relative;
+}
+.action_btn{
+    padding: 4px 8px;
+    margin-bottom: 3px;
+}

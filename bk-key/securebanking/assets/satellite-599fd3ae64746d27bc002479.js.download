@@ -1,0 +1,88 @@
+_satellite.pushAsyncScript(function(event, target, $variables){
+  var dcmData = {	
+	//'ingdirect:banking:login': {'type' : 'pagev0', 'cat': 'clien0' },
+	'ingdirect:banking:logout': {'type' : 'pagev0', 'cat': 'clien00' },
+	'ingdirect:banking:apply:oe:visitor:personal-details': {'type' : 'appli0', 'cat': 'clien0' },
+	'ingdirect:banking:apply:oe-sm-bundle:visitor:personal-details': {'type' : 'appli0', 'cat': 'clien0' },
+	'ingdirect:banking:apply:oe:client:intro': {'type' : 'appli0', 'cat': 'clien00' },
+	'ingdirect:banking:account-setup:oe:visitor:pending:set-up': {'type' : 'appli0', 'cat': 'clien000' },
+	'ingdirect:banking:account-setup:oe:client:pending:set-up': {'type' : 'appli0', 'cat': 'clien001' },
+	'ingdirect:banking:account-opened:oe:visitor:complete': {'type' : 'appli0', 'cat': 'clien002' },
+	'ingdirect:banking:account-opened:oe:client:complete': {'type' : 'appli0', 'cat': 'clien003' },
+	'ingdirect:banking:apply:sm:visitor:personal-details': {'type' : 'appli0', 'cat': 'clien004' },
+	'ingdirect:banking:apply:sm:client:intro': {'type' : 'appli0', 'cat': 'clien005' },
+	'ingdirect:banking:account-setup:sm:visitor:pending:set-up': {'type' : 'appli0', 'cat': 'clien006' },
+	'ingdirect:banking:account-setup:sm:client:pending:set-up': {'type' : 'appli0', 'cat': 'clien007' },
+	'ingdirect:banking:account-opened:sm:visitor:complete': {'type' : 'appli0', 'cat': 'clien008' },
+	'ingdirect:banking:account-opened:sm:client:complete': {'type' : 'appli0', 'cat': 'clien009' },
+	'ingdirect:banking:apply:sa:visitor:personal-details': {'type' : 'appli0', 'cat': 'clien00-' },
+	'ingdirect:banking:apply:sa:client:intro': {'type' : 'appli0', 'cat': 'clien00a' },
+	'ingdirect:banking:account-setup:sa:visitor:pending:set-up': {'type' : 'appli0', 'cat': 'clien00b' },
+	'ingdirect:banking:account-setup:sa:client:pending:set-up': {'type' : 'appli0', 'cat': 'clien00c' },
+	'ingdirect:banking:account-opened:sa:visitor:complete': {'type' : 'appli0', 'cat': 'clien00d' },
+	'ingdirect:banking:account-opened:sa:client:complete': {'type' : 'appli0', 'cat': 'clien00e' },
+	'ingdirect:banking:apply:td:visitor:personal-details': {'type' : 'appli0', 'cat': 'clien00f' },
+	'ingdirect:banking:apply:ptd:client:intro': {'type' : 'appli0', 'cat': 'clien00g' },
+	'ingdirect:banking:account-setup:ptd:visitor:pending:set-up': {'type' : 'appli0', 'cat': 'clien00h' },
+	'ingdirect:banking:account-setup:ptd:client:pending:set-up': {'type' : 'appli0', 'cat': 'clien00i' },
+	'ingdirect:banking:account-opened:ptd:visitor:complete': {'type' : 'appli0', 'cat': 'clien00j' },
+	'ingdirect:banking:account-opened:ptd:client:complete': {'type' : 'appli0', 'cat': 'clien00k' },
+	'ingdirect:banking:apply:ls:visitor:personal-details': {'type' : 'appli0', 'cat': 'clien00l' },
+	'ingdirect:banking:apply:ls:client:personal-details': {'type' : 'appli0', 'cat': 'clien00m' },
+	'ingdirect:banking:account-opened:ls:visitor:complete-next-steps': {'type' : 'appli0', 'cat': 'clien00p' },
+	'ingdirect:banking:account-opened:ls:client:complete-next-steps': {'type' : 'appli0', 'cat': 'clien00q' },
+	'ingdirect:banking:apply:hl:visitor:personal-details': {'type' : 'appli0', 'cat': 'clien00r' },
+	'ingdirect:banking:apply:oa:visitor:personal-details': {'type' : 'appli0', 'cat': 'clien00r' },
+	'ingdirect:banking:apply:frl:visitor:personal-details': {'type' : 'appli0', 'cat': 'clien00r' },
+	'ingdirect:banking:apply:ms:visitor:personal-details': {'type' : 'appli0', 'cat': 'clien00r' },
+	'ingdirect:banking:apply:hl:client:intro': {'type' : 'appli0', 'cat': 'clien00s' },
+	'ingdirect:banking:apply:hl:visitor:property': {'type' : 'appli0', 'cat': 'clien00t' },
+	'ingdirect:banking:apply:hl:client:property': {'type' : 'appli0', 'cat': 'clien00u' },
+	'ingdirect:banking:apply:hl:visitor:review-submit': {'type' : 'appli0', 'cat': 'clien00v' },
+	'ingdirect:banking:apply:hl:client:review-submit': {'type' : 'appli0', 'cat': 'clien00w' },
+	'ingdirect:banking:apply:hl:visitor:submitted': {'type' : 'appli0', 'cat': 'clien00x' },
+	'ingdirect:banking:apply:hl:client:submitted': {'type' : 'appli0', 'cat': 'clien00y' },
+	'ingdirect:banking:apply:oo:client:conditionally-approved': {'type' : 'appli0', 'cat': 'clien01e' },
+	'ingdirect:banking:apply:oo:visitor:conditionally-approved': {'type' : 'appli0', 'cat': 'clien01a' },
+	'ingdirect:banking:apply:oo:client:declined': {'type' : 'appli0', 'cat': 'clien01c' },
+	'ingdirect:banking:apply:oo:visitor:declined': {'type' : 'appli0', 'cat': 'clien019' },
+	'ingdirect:banking:apply:oo:client:in-review': {'type' : 'appli0', 'cat': 'clien01d' },
+	'ingdirect:banking:apply:oo:visitor:in-review': {'type' : 'appli0', 'cat': 'clien01-' },
+	'ingdirect:banking:apply:cc:client:intro': {'type' : 'appli0', 'cat': 'clien011' },
+	'ingdirect:banking:apply:cc:visitor:personal-details': {'type' : 'appli0', 'cat': 'clien015' },
+	'ingdirect:banking:apply:cc:client:app-submitted': {'type' : 'appli0', 'cat': 'clien014' },
+	'ingdirect:banking:apply:cc:visitor:app-submitted': {'type' : 'appli0', 'cat': 'clien017' },
+	'ingdirect:banking:apply:pl:client:approved': {'type' : 'appli0', 'cat': 'clien01n' },
+	'ingdirect:banking:apply:pl:visitor:approved': {'type' : 'appli0', 'cat': 'clien01m' },
+	'ingdirect:banking:apply:pl:client:conditionally-approved': {'type' : 'appli0', 'cat': 'clien01r' },
+	'ingdirect:banking:apply:pl:visitor:conditionally-approved': {'type' : 'appli0', 'cat': 'clien01q' },
+	'ingdirect:banking:apply:pl:client:declined': {'type' : 'appli0', 'cat': 'clien01o' },
+  'ingdirect:banking:apply:pl:visitor:declined' : {'type': 'appli0', 'cat': 'clien01p' },
+	'ingdirect:banking:apply:pl:client:intro': {'type' : 'appli0', 'cat': 'clien01l' },
+  'ingdirect:banking:apply:pl:visitor:app-submitted': {'type' : 'appli0', 'cat': 'clien01y' },
+  'ingdirect:banking:apply:pl:client:app-submitted': {'type' : 'appli0', 'cat': 'clien01z' },
+	'ingdirect:banking:apply:pl:visitor:personal-details': {'type' : 'appli0', 'cat': 'clien01k' }
+}
+
+var page_name = _satellite.getDataElement("virtual page name");
+var dcmType = "";
+var dcmCat = "";
+var dcmAppId = _satellite.getDataElement("application id");
+var dcmCrossSell = _satellite.getDataElement("cross sell");
+
+if(dcmData[page_name]) {
+  dcmType = dcmData[page_name].type;
+  dcmCat = dcmData[page_name].cat;
+} else {
+  return;
+}
+
+gtag('event', 'conversion', {
+  'allow_custom_scripts': true,
+  'u1': dcmAppId,
+  'u2': dcmCrossSell,
+  'send_to': 'DC-8133842/' + dcmType + '/' + dcmCat + '+unique'
+});
+
+
+});

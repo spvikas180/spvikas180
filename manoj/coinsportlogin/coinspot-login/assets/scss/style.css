@@ -1,0 +1,427 @@
+body {
+  background-color: #f6f7fa;
+}
+
+#navbar {
+  background-color: #0073dd;
+  padding: 5px 160px;
+}
+
+#navbar .navbar-brand {
+  color: white;
+}
+
+#navbar .navbar-brand img {
+  margin-right: 10px;
+}
+
+#navbar .navbar-collapse ul li {
+  padding: 0px 20px 0 0;
+}
+
+#navbar .navbar-collapse ul li a {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 1200px) {
+  #navbar .navbar-collapse ul li {
+    padding: 0;
+  }
+}
+
+#navbar .navbar-collapse form button {
+  margin-right: 10px;
+  border: 2px solid white;
+  border-radius: 2px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#navbar .navbar-collapse form .register {
+  background-color: white;
+  color: #004ea0;
+  padding: 6px 20px;
+}
+
+#navbar .navbar-collapse form .register:hover {
+  color: white;
+  background: none;
+}
+
+#navbar .navbar-collapse form .login {
+  color: white;
+  padding: 6px 15px;
+}
+
+#navbar .navbar-collapse form .login:hover {
+  background-color: white;
+  color: #004ea0;
+}
+
+@media (max-width: 1200px) {
+  #navbar {
+    padding: 5px 20px;
+  }
+}
+
+#form .loginForm {
+  background-color: white;
+  width: 80%;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-bottom: 90px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 30px 30px;
+}
+
+#form .loginForm h1 {
+  color: #0073dd;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#form .loginForm h3 {
+  font-size: 26px;
+  color: #008cff;
+}
+
+#form .loginForm form {
+  padding: 40px 0;
+}
+
+#form .loginForm form label {
+  color: #394956;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#form .loginForm form .input {
+  height: 45px;
+}
+
+#form .loginForm form .password {
+  text-align: center;
+  padding: 20px;
+}
+
+#form .loginForm form .password a {
+  text-decoration: none;
+  color: #004ea0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#form .loginForm form p {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+}
+
+#form .loginForm form p a {
+  color: #004ea0;
+  text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  #form .loginForm {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  #form .loginForm {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+#form .content {
+  padding: 60px 150px 0 15px;
+}
+
+#form .content h3 {
+  font-size: 20px;
+  color: #0073dd;
+  border-bottom: 2px solid #98cdff;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+#form .content .news {
+  border-bottom: 1px solid lightgray;
+}
+
+#form .content div {
+  color: #333333;
+}
+
+#form .content div h5 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  padding-top: 15px;
+}
+
+#form .content div h6 {
+  font-size: 16px;
+  font-size: 500;
+  padding-bottom: 15px;
+}
+
+@media (max-width: 992px) {
+  #form .content {
+    padding: 60px 60px 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  #form .content {
+    padding: 60px 30px;
+  }
+}
+
+#footer {
+  background-color: #c7def6;
+  padding: 40px 120px;
+}
+
+#footer .certificates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer .certificates .certificate {
+  text-align: center;
+}
+
+#footer .certificates .certificate a img {
+  height: 85px;
+}
+
+#footer .certificates .certificate p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #3e5169;
+  margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+  #footer .certificates {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#footer .links ul {
+  list-style-type: none;
+}
+
+#footer .links ul h6 {
+  color: #0073dd;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#footer .links ul li {
+  line-height: 18px;
+}
+
+#footer .links ul li a {
+  text-decoration: none;
+  color: #0073dd;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+#footer .links ul a button {
+  border: 2px solid #0073dd;
+  color: #0073dd;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: white;
+  margin-top: 15px;
+  padding: 0 5px;
+}
+
+@media (max-width: 1200px) {
+  #footer {
+    padding: 40px;
+  }
+}
+
+#footerLinks {
+  background-color: #0073dd;
+  color: white;
+  padding: 14px 120px;
+}
+
+#footerLinks .links a {
+  font-size: 14px;
+  color: white;
+  padding-right: 25px;
+}
+
+@media (max-width: 768px) {
+  #footerLinks .links {
+    text-align: center;
+  }
+}
+
+#footerLinks .links1 {
+  text-align: right;
+}
+
+#footerLinks .links1 p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  #footerLinks .links1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  #footerLinks {
+    padding: 14px 40px;
+  }
+}
+
+.verify {
+  background-color: white;
+  width: 80%;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-bottom: 90px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 30px 30px;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .verify {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .verify {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.verify h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.verify h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.verify p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.verify form label {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.verify form input {
+  border: none;
+  border: 2px solid lightgray;
+  height: 50px;
+  width: 70%;
+  margin: 15px;
+}
+
+.verify form .button button {
+  background-color: #0073dd;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.error {
+  background-color: white;
+  width: 80%;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-bottom: 90px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 30px 30px;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .error {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .error {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.error h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.error h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.error p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.error form label {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.error form .button {
+  padding: 20px;
+}
+
+.error form .button a {
+  background-color: #0073dd;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+#loader {
+  background: #fff url("../images/loader.gif") no-repeat center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+/*# sourceMappingURL=style.css.map */

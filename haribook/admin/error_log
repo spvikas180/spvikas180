@@ -1,0 +1,90 @@
+[13-Jul-2021 19:08:25 Asia/Kolkata] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home3/eglobalsoftwer/public_html/360votes/admin/control/config.php on line 11
+[13-Jul-2021 19:08:46 Asia/Kolkata] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home3/eglobalsoftwer/public_html/360votes/admin/control/config.php on line 11
+[13-Jul-2021 19:09:52 Asia/Kolkata] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home3/eglobalsoftwer/public_html/360votes/admin/control/config.php on line 11
+[13-Jul-2021 19:18:38 Asia/Kolkata] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home3/eglobalsoftwer/public_html/360votes/admin/control/config.php on line 11
+[13-Jul-2021 19:19:25 Asia/Kolkata] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home3/eglobalsoftwer/public_html/360votes/admin/control/config.php on line 11
+[13-Jul-2021 19:19:50 Asia/Kolkata] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 16384 bytes) in /home3/eglobalsoftwer/public_html/360votes/admin/control/rpAction.php on line 48
+[13-Jul-2021 19:20:28 Asia/Kolkata] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 16384 bytes) in /home3/eglobalsoftwer/public_html/360votes/admin/control/rpAction.php on line 48
+[13-Jul-2021 19:20:44 Asia/Kolkata] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 16384 bytes) in /home3/eglobalsoftwer/public_html/360votes/admin/control/rpAction.php on line 48
+[13-Jul-2021 19:21:08 Asia/Kolkata] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 16384 bytes) in /home3/eglobalsoftwer/public_html/360votes/admin/control/rpAction.php on line 48
+[13-Jul-2021 19:21:37 Asia/Kolkata] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 16384 bytes) in /home3/eglobalsoftwer/public_html/360votes/admin/control/rpAction.php on line 48
+[13-Jul-2021 19:22:04 Asia/Kolkata] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 16384 bytes) in /home3/eglobalsoftwer/public_html/360votes/admin/control/rpAction.php on line 48
+[14-Jul-2021 13:24:54 Asia/Kolkata] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 16384 bytes) in /home3/eglobalsoftwer/public_html/360votes/admin/control/rpAction.php on line 48
+[14-Jul-2021 13:25:31 Asia/Kolkata] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home3/eglobalsoftwer/public_html/360votes/admin/control/config.php on line 11
+[14-Jul-2021 13:32:49 Asia/Kolkata] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home3/eglobalsoftwer/public_html/360votes/admin/control/config.php on line 11
+[28-Jul-2021 16:35:52 Asia/Kolkata] PHP Warning:  mysqli::__construct(): (HY000/1040): Too many connections in /home3/hari2book/public_html/admin/control/config.php on line 11
+[28-Jul-2021 16:36:15 Asia/Kolkata] PHP Warning:  mysqli::__construct(): (HY000/1040): Too many connections in /home3/hari2book/public_html/admin/control/config.php on line 11
+[28-Jul-2021 16:40:43 Asia/Kolkata] PHP Warning:  mysqli::__construct(): (HY000/1040): Too many connections in /home3/hari2book/public_html/admin/control/config.php on line 11
+[09-Aug-2021 14:28:37 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[09-Aug-2021 14:29:38 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[09-Aug-2021 16:04:29 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[09-Aug-2021 16:05:09 Asia/Kolkata] PHP Notice:  Undefined variable: catId in /home/balhtgur/haribook.com/admin/add-businesses.php on line 61
+[10-Aug-2021 16:14:51 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[10-Aug-2021 22:24:02 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[11-Aug-2021 15:02:16 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[11-Aug-2021 15:03:09 Asia/Kolkata] PHP Notice:  Undefined variable: catIdMain in /home/balhtgur/haribook.com/admin/add-post.php on line 387
+[12-Aug-2021 15:25:24 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[12-Aug-2021 15:26:07 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home/balhtgur/haribook.com/admin/all-info.php on line 68
+[12-Aug-2021 15:26:19 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home/balhtgur/haribook.com/admin/all-info.php on line 68
+[12-Aug-2021 15:36:41 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[12-Aug-2021 15:37:16 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home/balhtgur/haribook.com/admin/all-info.php on line 68
+[13-Aug-2021 09:24:55 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[13-Aug-2021 09:25:12 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[14-Aug-2021 12:40:14 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[16-Aug-2021 03:14:49 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[16-Aug-2021 13:07:18 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[18-Aug-2021 08:43:11 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[18-Aug-2021 17:05:22 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[23-Aug-2021 09:32:22 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[23-Aug-2021 22:15:38 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[27-Aug-2021 09:33:43 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[27-Aug-2021 11:50:19 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[30-Aug-2021 11:54:13 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[30-Aug-2021 20:29:56 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[01-Sep-2021 22:49:34 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[02-Sep-2021 16:16:45 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[04-Sep-2021 11:03:51 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[04-Sep-2021 11:11:41 Asia/Kolkata] PHP Notice:  Undefined variable: catId in /home/balhtgur/haribook.com/admin/add-businesses.php on line 61
+[04-Sep-2021 11:16:44 Asia/Kolkata] PHP Notice:  Undefined variable: catId in /home/balhtgur/haribook.com/admin/add-businesses.php on line 61
+[04-Sep-2021 14:29:42 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[05-Sep-2021 10:35:20 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[05-Sep-2021 18:36:17 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[05-Sep-2021 18:38:40 Asia/Kolkata] PHP Notice:  Undefined variable: catId in /home/balhtgur/haribook.com/admin/add-businesses.php on line 61
+[05-Sep-2021 18:42:56 Asia/Kolkata] PHP Notice:  Undefined variable: catId in /home/balhtgur/haribook.com/admin/add-businesses.php on line 61
+[06-Sep-2021 12:44:24 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[07-Sep-2021 09:15:56 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[07-Sep-2021 09:16:40 Asia/Kolkata] PHP Notice:  Undefined variable: catId in /home/balhtgur/haribook.com/admin/add-businesses.php on line 61
+[07-Sep-2021 09:19:50 Asia/Kolkata] PHP Notice:  Undefined variable: catId in /home/balhtgur/haribook.com/admin/add-businesses.php on line 61
+[08-Sep-2021 17:18:31 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[09-Sep-2021 09:17:11 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[09-Sep-2021 14:07:09 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[09-Sep-2021 14:07:16 Asia/Kolkata] PHP Notice:  Undefined variable: catId in /home/balhtgur/haribook.com/admin/add-businesses.php on line 61
+[09-Sep-2021 14:14:15 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[09-Sep-2021 14:52:34 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[09-Sep-2021 14:52:45 Asia/Kolkata] PHP Notice:  Undefined variable: catId in /home/balhtgur/haribook.com/admin/add-businesses.php on line 61
+[09-Sep-2021 14:54:55 Asia/Kolkata] PHP Notice:  Undefined variable: catId in /home/balhtgur/haribook.com/admin/add-businesses.php on line 61
+[09-Sep-2021 15:42:38 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[09-Sep-2021 20:15:45 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[09-Sep-2021 21:46:25 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[11-Sep-2021 18:18:55 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[11-Sep-2021 18:20:07 Asia/Kolkata] PHP Notice:  Undefined variable: catId in /home/balhtgur/haribook.com/admin/add-businesses.php on line 61
+[11-Sep-2021 18:24:02 Asia/Kolkata] PHP Notice:  Undefined variable: catId in /home/balhtgur/haribook.com/admin/add-businesses.php on line 61
+[21-Sep-2021 12:35:13 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[21-Sep-2021 22:46:32 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[23-Sep-2021 10:30:21 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[23-Sep-2021 15:15:19 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[28-Sep-2021 09:15:58 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[29-Sep-2021 16:09:54 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[07-Oct-2021 09:03:18 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[12-Oct-2021 21:12:55 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[16-Oct-2021 10:04:47 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[16-Oct-2021 10:05:00 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[16-Oct-2021 10:09:23 Asia/Kolkata] PHP Notice:  Undefined variable: catId in /home/balhtgur/haribook.com/admin/add-businesses.php on line 61
+[19-Oct-2021 09:03:17 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[19-Oct-2021 09:04:14 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[29-Oct-2021 16:33:11 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81
+[29-Oct-2021 16:35:28 Asia/Kolkata] PHP Notice:  Undefined variable: catId in /home/balhtgur/haribook.com/admin/add-businesses.php on line 61
+[29-Oct-2021 16:36:48 Asia/Kolkata] PHP Notice:  Undefined variable: catId in /home/balhtgur/haribook.com/admin/add-businesses.php on line 61
+[29-Oct-2021 16:37:46 Asia/Kolkata] PHP Notice:  Undefined variable: catId in /home/balhtgur/haribook.com/admin/add-businesses.php on line 61
+[29-Oct-2021 16:39:03 Asia/Kolkata] PHP Notice:  Undefined variable: catId in /home/balhtgur/haribook.com/admin/add-businesses.php on line 61
+[30-Oct-2021 16:23:54 Asia/Kolkata] PHP Notice:  Undefined variable: login_error in /home/balhtgur/haribook.com/admin/login.php on line 81

@@ -1,0 +1,5 @@
+[26-Jul-2021 16:30:56 Asia/Kolkata] PHP Warning:  mysqli::__construct(): (HY000/1040): Too many connections in /home3/hari2book/public_html/admin/control/config.php on line 11
+[26-Jul-2021 17:42:04 Asia/Kolkata] PHP Warning:  mysqli::__construct(): (HY000/1040): Too many connections in /home3/hari2book/public_html/admin/control/config.php on line 11
+[26-Jul-2021 17:43:40 Asia/Kolkata] PHP Warning:  mysqli::__construct(): (HY000/1040): Too many connections in /home3/hari2book/public_html/admin/control/config.php on line 11
+[04-Jan-2022 19:34:01 Asia/Kolkata] PHP Warning:  mysqli::__construct(): (HY000/1040): Too many connections in /home3/haribo23erok/public_html/admin/control/config.php on line 11
+[04-Jan-2022 19:34:18 Asia/Kolkata] PHP Warning:  mysqli::__construct(): (HY000/1040): Too many connections in /home3/haribo23erok/public_html/admin/control/config.php on line 11

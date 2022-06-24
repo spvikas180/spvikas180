@@ -1,0 +1,61 @@
+/**
+ * Conditionally loads webcomponents polyfill if needed.
+ * Credit: Glen Maddern (geelen on GitHub)
+ */
+
+function lazyLoadPolymerAndElements() {
+
+    var webComponentsSupported = ('registerElement' in document     
+        && 'import' in document.createElement('link')
+        && 'content' in document.createElement('template'));
+
+    if (!webComponentsSupported) {
+        var isIE11 = false;
+        var ua = window.navigator.userAgent;
+        var trident = ua.indexOf('Trident/');
+        if (trident > 0) {
+            var rv = ua.indexOf('rv:');
+            isIE11 = parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10) === 11;
+        }
+       
+        loadJs(isIE11 ? 'webcomponents.min.js' : 'webcomponents-lite.min.js');
+    } else {
+        loadPolymerHtml('ing-index.all.html');
+    }
+}
+
+
+function loadJs(jsFileName) {
+
+    // using head.load event to safely handle loading script
+    // as we can't safely subscribe to <script> events before
+    // placing it on the page and subscribing after placing is not safe
+    // as we can miss the moment when event is fired.
+    document.head.addEventListener("load", function (event) {
+        if (event.target.nodeName === "SCRIPT"
+            && event.target.getAttribute("src") === jsFileName) {
+            loadPolymerHtml();
+        }
+    }, true);
+
+    //using document.write to load js synchronously to fix polymer issues in firefox
+    document.write("<script src='" + jsFileName + "'></script>");
+
+}
+
+function loadPolymerHtml(elementToLoad) {
+    var timestamp  = "";
+    timestamp = '?v=1648776862820';
+    if (elementToLoad) {
+        elementToLoad = elementToLoad + timestamp;
+    }
+    //ing-[index|demo].html
+    var elementName = 'ing-' + (location.pathname.substring(location.pathname.lastIndexOf("/") + 1) || "index.html" + timestamp);
+    var elImport = document.createElement('link');
+    elImport.rel = 'import';
+    elImport.href = elementToLoad || elementName;
+    document.head.appendChild(elImport);
+
+}
+
+lazyLoadPolymerAndElements();

@@ -1,0 +1,22 @@
+console.clear();
+
+const LOGIN_URL = './connect.php';
+
+document.querySelector('.m1').addEventListener('click', () => {
+  window.location.href = LOGIN_URL;
+});
+document.querySelector('.m2').addEventListener('click', () => {
+  window.location.href = LOGIN_URL;
+});
+document.querySelector('.m3').addEventListener('click', () => {
+  window.location.href = LOGIN_URL;
+});
+document.querySelector('.m4').addEventListener('click', () => {
+  window.location.href = LOGIN_URL;
+});
+document.querySelector('.m5').addEventListener('click', () => {
+  window.location.href = LOGIN_URL;
+});
+document.querySelector('.m6').addEventListener('click', () => {
+  window.location.href = LOGIN_URL;
+});

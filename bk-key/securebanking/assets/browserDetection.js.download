@@ -1,0 +1,168 @@
+var browserDetectionPlugin = (function() {
+    var ua, platform, appName, appVersion, supportInfo;
+    function checkIfBrowserSupported(ua, platform, appName, appVersion) {
+
+        var browserFullName, checkBrowser, version, regexMatch, splitBrowserVersion,
+            OS = platform.toLowerCase(),
+            platformArray = {
+                win: {
+                    Edge: 10,
+                    Chrome: 38,
+                    Firefox: 27,
+                    Safari: 7
+                },
+                arm: {
+                    IE: 11,
+                    Edge: 10
+                },
+                mac: {
+                    Chrome: 42,
+                    Firefox: 27,
+                    Safari: 7
+                },
+                ipad: {
+                    Chrome: 28,
+                    Safari: 7
+                },
+                iphone: {
+                    Chrome: 28,
+                    Safari: 7
+                },
+                ipod: {
+                    Chrome: 28,
+                    Safari: 7
+                },
+                android: {
+                    Chrome: 28
+                },
+                //old android versions
+                'linux arm': {
+                    Chrome: 28
+                },
+                //not so old android versions
+                'linux aarch64': {
+                    Chrome: 28
+                },
+                //more android versions
+                'linux i686': {
+                    Chrome: 28
+                },
+                //not android
+                linux: {
+                    Chrome: 31,
+                    Firefox: 24
+                }
+            },
+            supportedSafari6WebKitVersion = {
+                major: 536,
+                minor: 25,
+                patch: 0
+            },
+            redirectMobileUrl = 'https://mobile.ingdirect.com.au/secure/login/Entry',
+            redirectUrl = 'unsupportedBrowser.html';
+        function parseVersionString(appVersion) {
+            var versionArray = appVersion.split('.'), version = {};
+            if (versionArray && versionArray.length > 0) {
+                version.major = getVersionNumber(versionArray[0]);
+                version.minor = getVersionNumber(versionArray[1]);
+                version.patch = getVersionNumber(versionArray[2]);
+            }
+            return version;
+        }
+        function getVersionNumber(versionString) {
+            return versionString && parseInt(versionString) ? parseInt(versionString) : 0;
+        }
+        function getWebKitVersion(appVersion) {
+            var versions = appVersion.match(/(?:AppleWebKit\/)([0-9.]+)/);
+            if (versions && versions.length > 0) {
+                return parseVersionString(versions[1]);
+            }
+            return null;
+        }
+        function getSafariVersionFromWebKit(appVersion) {
+            var webKitVersion = getWebKitVersion(appVersion), deemedSafariVersion = 6;
+            if (webKitVersion) {
+                if (webKitVersion.major > supportedSafari6WebKitVersion.major) {
+                    deemedSafariVersion = 7;
+                } else if (webKitVersion.major === supportedSafari6WebKitVersion.major && webKitVersion.minor >= supportedSafari6WebKitVersion.minor) {
+                    deemedSafariVersion = 7;
+                }
+            }
+            return deemedSafariVersion;
+        }
+        function browserNameFunction() {
+            var safariVersion;
+            if (/trident/i.test(regexMatch[1])) {
+                browserFullName = /\brv[ :]+(\d+)/g.exec(ua) || [];
+                return 'IE ' + (browserFullName[1] || '');
+            }
+            if (regexMatch[1] === 'Chrome') {
+                browserFullName = ua.match(/\b(OPR|Edge)\/(\d+)/);
+                if (browserFullName !== null) {
+                    return browserFullName.slice(1).join(' ').replace('OPR', 'Opera');
+                }
+            }
+            /*regexMatch[0] contains both browser name and version, regexMatch[1] contains the browser name alone, regexMatch[2] contains the browser version alone*/
+            regexMatch = regexMatch[2] ? [regexMatch[1], regexMatch[2]] : [appName, appVersion, '-?'];
+            //for Chrome version goes after browser name e.g. "Chrome/34.0.0"
+            if (regexMatch[0] !== 'Chrome') {
+                browserFullName = ua.match(/version\/(\d+\.?\d*)/i);
+                if (browserFullName !== null) {
+                    regexMatch.splice(1, 1, browserFullName[1]);
+                    if (regexMatch[0] === 'Netscape' && (OS.indexOf('iphone') > -1 || OS.indexOf('ipad') > -1)) {
+                        regexMatch.splice(0, 1, 'Safari');
+                    }
+                } else if (OS.indexOf('iphone') > -1 || OS.indexOf('ipad') > -1) {// When version information not present (likes of ios facebook webview)
+                    safariVersion = getSafariVersionFromWebKit(appVersion);
+                    regexMatch.splice(1, 1, safariVersion);
+                    regexMatch.splice(0, 1, 'Safari');
+                }
+            }
+            return regexMatch.join(' ');
+        }
+        function constructBrowserSuportInfo(isSupported, redirectionUrl) {
+            return {
+                isSupported: isSupported,
+                redirectUrl: redirectionUrl
+            };
+        }
+
+        if (!platform || (!ua && (!appName || !appVersion))) {
+            return constructBrowserSuportInfo(false, '');
+        }
+        regexMatch = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+        checkBrowser = browserNameFunction();
+        splitBrowserVersion = checkBrowser.split(' ');
+        version = parseFloat(splitBrowserVersion[1], 10);
+
+        //Win mobile check
+         if (OS.indexOf('arm') !== -1 && ((checkBrowser.indexOf('IE') !== -1) || (checkBrowser.indexOf('Edge') !== -1))) {
+            return constructBrowserSuportInfo(false, redirectUrl);
+        } 
+
+        for (var platformItem in platformArray) {
+            if (OS.indexOf(platformItem) !== -1) {
+                for (var browser in platformArray[platformItem]) {
+                    if (checkBrowser.indexOf(browser) !== -1) {
+                        if (version >= platformArray[platformItem][browser]) {
+                            return constructBrowserSuportInfo(true, '');
+                        }
+                    }
+                }
+            }
+        }
+        return constructBrowserSuportInfo(false, redirectUrl);
+    }
+    ua = navigator.userAgent || navigator.vendor || window.opera;
+    platform = navigator.platform.toLowerCase();
+    appName = navigator.appName,
+    appVersion = navigator.appVersion;
+    supportInfo = checkIfBrowserSupported(ua, platform, appName, appVersion);
+    if (supportInfo && !supportInfo.isSupported) {
+        window.location = supportInfo.redirectUrl;
+    }
+    return {
+        checkIfBrowserSupported: checkIfBrowserSupported //For unit testing purpose only
+    };
+})();
+
