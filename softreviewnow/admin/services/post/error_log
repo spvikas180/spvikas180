@@ -1,3 +1,0 @@
-[01-Nov-2021 16:17:04 Asia/Kolkata] PHP Warning:  file_get_contents(../../../sitemap.xml): failed to open stream: No such file or directory in /home2/sovgd/public_html/admin/control/functions.php on line 406
-[01-Nov-2021 16:17:04 Asia/Kolkata] PHP Warning:  file_get_contents(../../../sitemap.xml): failed to open stream: No such file or directory in /home2/sovgd/public_html/admin/control/functions.php on line 406
-[01-Nov-2021 16:17:04 Asia/Kolkata] PHP Warning:  file_get_contents(../../../sitemap.xml): failed to open stream: No such file or directory in /home2/sovgd/public_html/admin/control/functions.php on line 406
